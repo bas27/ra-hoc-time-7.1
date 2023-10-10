@@ -1,4 +1,5 @@
 Форматирование даты публикации
+[![ex-page](https://github.com/bas27/ra-hoc-time-7.1/actions/workflows/web.yml/badge.svg)](https://github.com/bas27/ra-hoc-time-7.1/actions/workflows/web.yml)
 ===
 
 Есть страница, содержащая список видеозаписей. 
