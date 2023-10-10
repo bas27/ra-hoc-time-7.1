@@ -1,8 +1,19 @@
-# React + Vite
+Форматирование даты публикации
+===
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Есть страница, содержащая список видеозаписей. 
+У каждого блока есть дата публикации. 
 
-Currently, two official plugins are available:
+![Relative Time](./src/assets/time.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+В данный момент выводится просто текущее значение. Пример: `2017-09-01 14:15:10`. 
+Решено изменять представление даты следующим образом в зависимости от его значения:
+`12 минут назад`, если прошло меньше часа, `5 часов назад`, если прошло больше часа, `X дней назад`, если больше суток.
+
+## Реализация
+
+Используя HOC, обернуть `DateTime` в компонент `DateTimePretty` так, чтобы он преобразовывал дату в нужный вид.
+
+Воспользуйтесь готовым файлом `App.js` и стилями `css/index.css` из каталога в качестве отправной точки. Замените ими те, что создаются в create-react-app.
+
+Для работы с датой и временем можете воспользоваться библиотекой Moment.js.
