@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import 'moment/locale/ru';
 
 export default function withFriendlyDate(Component) {
   class WrappedComponent extends React.Component {
